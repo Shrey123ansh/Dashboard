@@ -1,0 +1,214 @@
+*{
+  font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(63, 63, 63);
+  }
+  .footer-container {
+    max-width: 90vw;
+    margin: auto;
+  }
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+  }
+  .footer {
+    background-color: #0b0b0b;
+    padding: 30px 0;
+  }
+  .footer-bottom {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color:#0b0b0b ;
+  }
+  .footer-bottom-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer-bottom-bold {
+    font-weight: 800;
+    font-size: 19px;
+  }
+  .footer-bottom-red {
+    color: #EB0028;
+  }
+  .footer-col {
+    width: 30%;
+    padding: 0px 15px;
+    z-index:9999;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .footer-left {
+    width: 35%;
+    padding: 0 40px;
+  }
+  .footer-left img {
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .footer-left h5 {
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0.6px 0.6px rgb(255, 255, 255)
+  }
+  .footer-left h6 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 400;
+    position: relative;
+    padding-top: 25px;
+    text-shadow: 0.6px 0.6px rgb(255, 255, 255)
+  }
+  .footer-left h7 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 400;
+    position: relative;
+    text-shadow: 0.6px 0.6px rgb(255, 255, 255)
+  }
+  .footer-bottom-text h5 {
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+    font-weight: 400;
+    position: relative;
+   
+  }
+  .footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0.6px 0.6px rgb(255, 255, 255);
+  }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .footer-col ul li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #c9c9c9;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #EB0028;
+    padding-left: 8px;
+    text-shadow: 0.6px 0.6px #EB0028;
+  }
+  .footer-col .footer-social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: -0px 10px 10px 0;
+    padding: 9px;
+    text-align: center;
+    /* line-height: 40px; */
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 2rem;;
+    transition: all 0.5s ease;
+  }
+  .footer-col .footer-social-links a:hover {
+    color: #ffffff;
+    
+  }
+  .footer-col ul .fbText a:hover{
+    color:#3b5998 ;
+    text-shadow: 0.6px 0.6px #3b5998;
+  }
+  .footer-col ul .twitterText a:hover{
+    color:#00acee ;
+    text-shadow: 0.6px 0.6px #00acee;
+  }
+  .footer-col ul .instaText a:hover{
+    color:#D80971 ;
+    text-shadow: 0.6px 0.6px #D80971;
+  }
+  .footer-col ul .linkedinText a:hover{
+    color:#0A66C2 ;
+    text-shadow: 0.6px 0.6px #0A66C2;
+  }
+  .footer-col .footer-social-links .fb:hover{
+    background-color:  #3b5998 ;
+  }
+  .footer-col .footer-social-links .twitter:hover{
+    background-color:  #00acee;
+  }
+  .footer-col .footer-social-links .instagram:hover{
+    background-color: #D80971;
+  }
+  .footer-col .footer-social-links .linkedin:hover{
+    background-color: #0A66C2;
+  }
+  
+  .underline{
+    width: 60px;
+    height: 2px;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .underline span{
+    width: 33%;
+    height: 4px;
+    background: #EB0028;
+    border-radius: 3px ;
+    position: absolute;
+    top: -0.5px;
+    left: 10px;
+    animation: moving 1.2s linear infinite;
+  }
+  
+  @keyframes moving{
+    0%{
+      left: -20px;
+    }
+    100%{
+      left: 100%;
+    }
+  }
+  @media (max-width: 760px) {
+    .footer-col {
+      width: 100%;
+      padding: 15px 15px;
+      align-items: normal;
+    }
+  
+    .footer-left {
+      width: 100%;
+      margin-bottom: 30px;
+      padding-left: 15px;
+    }
+  }
+
+

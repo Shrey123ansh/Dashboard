@@ -1,0 +1,81 @@
+*{
+  font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+    
+    .container4{
+        display:flex;
+        flex-direction : row;
+        margin : 8rem 4rem;
+    }
+    .container4-left{
+        flex : 1;
+        height : 30rem;
+        width : 20vw;
+        display: flex;  
+        justify-content: center;  
+        align-items: center;
+    }
+   .wrapper3{
+    /* padding : 100px; */
+  }
+  .wrapper3 img{
+    height:25rem;
+  }
+    .container4-right{
+        flex: 1;
+        height : 30rem;
+        width : 20vw;
+        display: flex;  
+        justify-content: center;  
+        align-items: center;
+    }
+    .content1{
+        padding : 100px;
+        text-align:center;
+    }
+    .content1 p {
+        margin-top: 2rem;
+        font-size : 1.8rem;
+    }
+    .btn1{
+        margin-top : 2rem;
+        padding: 0.8rem;
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        background-color: white;
+        color:black;
+        font-weight: 600;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .btn1:hover{
+        background-color: #EB0028;
+        transition: all ease-in-out 350ms;
+    }
+
+    @media screen and (max-width: 800px){
+        .container4{
+          flex-direction:column;
+        }
+         .container4-left{
+          /* display: none; */
+          width:100%;
+        } 
+       .container4-right{
+          width:100%;
+        }
+        .content1{
+            padding:40px;
+            text-align:center;
+        }
+        .btn1 {
+          margin: 2rem 2vw;
+          padding: 2vw;
+        }
+        .btn1:hover{
+            background-color: #EB0028;
+            transition: all ease-in-out 350ms;
+        }
+      }

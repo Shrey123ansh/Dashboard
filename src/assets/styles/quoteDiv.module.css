@@ -1,0 +1,86 @@
+*{
+    font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body{
+    background-color:black;
+}
+.sub-heading{
+    color: #fff;
+    padding: 2% 0% 0 11%;
+    font-size: 5rem;
+}
+.parent-container{
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.container-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    padding: 40px 0px;
+}
+
+.quote {
+    position:relative;
+    width:78%;
+    padding:15px 25px 20px;
+    margin:20px auto;
+    font-size: 90px;
+    font:italic  Georgia, serif;
+    color:#fff;
+    background:#242424;
+    height: 89%;
+}
+
+.quote:after {
+    content:"";
+    position:absolute;
+    top:100%;
+    right:25px;
+    border-width:30px 35px 0 0;
+    border-style:solid;
+    border-color:#242424 transparent;
+    /* css3 extras */
+    -webkit-transform:skewX(-15deg);
+       -moz-transform:skewX(-15deg);
+        -ms-transform:skewX(-15deg);
+         -o-transform:skewX(-15deg);
+            transform:skewX(-5deg);
+}
+
+.credit {
+    margin:1em 0 0;
+    font:24px/1.2 Arial, sans-serif;
+}
+
+.credit:before {
+    content:"— ";
+}
+
+blockquote p {
+    font-size: 18px;
+    padding:0; margin:0;}
+
+@media screen and (max-width: 800px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 100vw;
+        padding: 40px 0px;
+    }
+}

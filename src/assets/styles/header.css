@@ -1,0 +1,119 @@
+*{
+    font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.containe{
+    /* margin-top:6rem; */
+    /* width: 100vw;
+    height: 100vh;*/
+    display: flex; 
+    flex-direction:column;
+}
+.about{
+    position : absolute;
+    margin-top:12rem;;
+    margin-left:3rem;;
+    color:white;
+    font-size:10rem;
+}
+.aboutTed{
+    text-align : center;
+}
+.image-container{
+
+    /* height:20px;; */
+}
+.images-container img
+{
+   width:100%;
+   height:710px;
+}
+
+.container2{
+    display:flex;
+    flex-direction : row;
+    margin : 3rem 3rem;
+}
+.container2-left{
+    flex : 1;
+    height : 30rem;
+    width : 20vw;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    /* transform: translateX(650px); */
+    /* opacity: 0; */
+    /* transition: .5s all ease; */
+}
+.wrapper1{
+/* padding : 100px; */
+}
+.wrapper1 img{
+height:25rem;
+}
+.container2-right{
+    flex: 1;
+    height : 30rem;
+    width : 20vw;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    /* transform: translateX(-700px); */
+    /* opacity: 0; */
+    /* transition: .5s all ease; */
+}
+.content1{
+    padding : 100px;
+    text-align:center;
+}
+.content1 p {
+    margin-top: 2rem;
+    color : white;
+}
+.btn1{
+    margin-top : 2rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #EB0028;
+    transition: all ease-in-out 350ms;
+}
+
+.ted{
+    color:white;  
+}
+
+@media screen and (max-width: 800px){
+    .container2{
+      flex-direction:column;
+    }
+     .container2-left{
+      /* display: none; */
+      width:100%;
+    } 
+   .container2-right{
+      width:100%;
+    }
+    .content1{
+        /* margin: 4vh 16vw 0vh 16vw; */
+        padding:40px;
+        text-align:center;
+    }
+    .btn1 {
+      margin: 2rem 2vw;
+      padding: 2vw;
+    }
+    .btn1:hover{
+        background-color: #EB0028;
+        transition: all ease-in-out 350ms;
+    }
+  }

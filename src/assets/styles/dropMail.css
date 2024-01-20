@@ -1,0 +1,110 @@
+*{
+    font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+#contact{
+    margin : 2rem 0;
+}
+#contact .container-mail {
+    margin-left: 237px;
+}
+
+#contact .squarea {
+    height: 300px;
+    padding-left: 45px;
+    width: 300px;
+    background-color: #EB0028;
+    color: beige;
+    opacity:1;
+}
+
+#contact .squarea h1 {
+    font-family: Monotype Koufi;
+    font-size: 70px;
+    line-height: 80%;
+    padding: 0px 25px;
+    padding-top: 55px;
+    font-weight: 550;
+}
+
+.row {
+    display:flex;
+    color:black;
+}
+.dropbox{
+    padding : 3rem;
+    margin-top:5px;
+}
+.form {
+    padding: 5rem;
+    margin-top: auto;
+    z-index:2;
+}
+.form-row{
+    display:flex;
+}
+.form-data{
+    margin:1rem 10px 1rem 0;
+}
+.form-data input[type="text"]
+{
+    text-transform: none;
+}
+.btn1{
+    margin-top : 2rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    border-color:white
+}
+.btn1:hover{
+    background-color: #EB0028;
+    transition: all ease-in-out 350ms;
+}
+@media (min-width: 1024px) {
+    #contact {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-height: 500px) {
+    .row {
+        flex-direction: column;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    #contact {
+        height: auto;
+    }
+    #contact .container {
+        padding-top: 130px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    #contact .container-mail {
+        margin-left: 10px;
+    }
+    #contact h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #contact h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

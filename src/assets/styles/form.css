@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*{
+  font-family: 'Gentium Book Basic','Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+:root {
+  --primary: #000000;
+  --primary-dark: #e1e4ea;
+  --secondary-lime: #e1ff2d;
+  --secondary-lavender: #d3b7f8;
+  --primary-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  --secondary-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  --font: "Nunito Sans", sans-serif;
+  
+}
+
+.payment {
+  background: var(--primary);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  z-index:1;
+}
+.conta {
+  display: flex;
+  flex-direction: column;
+  padding-block: 24px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #faf3f1, #cbcdd3);
+  box-shadow: var(--primary-box-shadow);
+  height: 500px;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment input {
+  border: none;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #a6beee, #cbcdd3);
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* 
+.payment input[type="text"],
+input[type="email"] ,
+input[type="number"]{
+  box-shadow: var(--secondary-box-shadow);
+  padding-inline: 20px;
+  height: 49px;
+  width: 60%;
+  border:none;
+  text-transform: none;
+} */
+.btt {
+
+  border: none;
+  
+  border-radius: 10px;
+  background: linear-gradient(145deg, #0d0d0e, #2c2c8a);
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: var(--primary-box-shadow);
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  height: 50px;
+  font-size: 1rem;
+  color: #ffebeb;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  border:none;
+  font-size:2rem;
+
+}
+.btt:hover{
+  background: linear-gradient(145deg,  #2c2c8a, #0d0d0e);
+  
+}
+#title {
+  color: #5a5a5a;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  margin : 1rem 0 ;
+}
+#linksParent {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  margin-top : 30px;
+  margin-bottom : 30px;
+  font-size: 1.5rem;
+
+}
+#linksParent > a {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.8rem;
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rip1,
+.rip2 {
+  /* filter: blur(1px); */
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+}
+.rip1 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  background: linear-gradient(to bottom right, #dfdbdb 0%, #b1afaf 100%);
+  animation: waves 2s linear infinite;
+}
+.rip2 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  animation: waves 2s linear 1s infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  50% {
+    opacity: 1;
+    border-radius: 15px;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    border-radius: 20px;
+  }
+}
+#button {
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
